@@ -1,15 +1,13 @@
 # Εισαγωγή στο Angular Framework
 
 ## Βήμα 3: Component Input
- 
+
 - Δημιουργία interface για τα δεδομένα τύπου `Person`
- 
 
   ```bash
   ng generate interface shared/interfaces/person
   ```
 
- 
   ```typescript
   export interface Person {
     givenName: string;
@@ -19,15 +17,15 @@
     address: string;
   }
   ```
- 
+
 - Χρήση του interface `Person` ως τύπο του χαρακτηριστικού `person` στο component `PersonTableComponent`
- 
+
 - Χρήση του decorator `@Input()` στο χαρακτηριστικό `person` τύπου `Person` ή `undefined` στο component `PersonTableComponent`
- 
+
 - Χρήση του `@if() {} @else {}` στο template του component `PersonTableComponent` για την υπό συνθήκη εμφάνιση των δεδομένων του χαρακτηριστικού `person`
- 
+
 - Η δέσμευση των χαρακτηριστικών της κλάσης `AppComponent` στο χαρακτηριστικό `person` του component `PersonTableComponent` γίνεται στο template του component `AppComponent`
- 
+
   ```html
   <app-person-table [person]="person0"></app-person-table>
   <!-- Χωρίς δέσμευση στο επόμενο -->
