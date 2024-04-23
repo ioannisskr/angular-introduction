@@ -481,10 +481,11 @@ getDadJoke() {
 
 - Δημιουργία online repository στο GitHub (`angular-introduction`) και αποστολή του κώδικα
 
-  ```bash
+  ````bash
   git remote add origin git@github.com:christodoulos/angular-introduction.git
-  git push -u origin main
-  ```
+  git push -u origin main```
+
+  ````
 
 - Δημιουργία του repository `<username>.github.io` αν δεν υπάρχει ήδη.
 
